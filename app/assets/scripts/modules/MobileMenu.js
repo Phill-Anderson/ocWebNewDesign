@@ -22,8 +22,14 @@ class MobileMenu {
   }
   clickAnyPoint(e) {
     this.menuContent.style.display = "none";
+    if (this.menuContent.classList.contains("mobile-menu__content--is-visible"))
+      this.menuContent.classList.remove("mobile-menu__content--is-visible");
     if (this.menuIcon.classList.contains("mobile-menu--closed"))
       this.menuIcon.classList.remove("mobile-menu--closed");
+    if (this.siteHeader.classList.contains("mobile-menu--is-expanded"))
+      this.siteHeader.classList.remove("mobile-menu--is-expanded")
+    if (this.menuIcon.classList.contains("mobile-menu--closed"))
+      this.menuIcon.classList.remove("mobile-menu--closed")
   }
 }
 

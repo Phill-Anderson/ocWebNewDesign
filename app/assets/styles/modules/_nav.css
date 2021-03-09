@@ -9,6 +9,7 @@
   @mixin atMedium {
     padding: 25px;
     height: 100px;
+    z-index: 9999;
   }
   &__menu {
     position: relative;
@@ -59,6 +60,16 @@
     a:hover {
       color: white;
       background: rgba(255, 255, 255, 0.2);
+    }
+    @mixin atMedium {
+      a {
+        width: 100px;
+      }
+    }
+    @mixin atLarge {
+      a {
+        width: 150px;
+      }
     }
   }
   &__item:last-child {
