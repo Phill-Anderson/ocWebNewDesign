@@ -1,0 +1,104 @@
+.wrapper {
+  overflow: hidden;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .&--medium {
+    max-width: 730px;
+  }
+
+  .&--narrow {
+    max-width: 470px;
+  }
+  &--py-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba($mainGrey, 0.3);
+    @mixin atSmall {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @mixin atMedium {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @mixin atLarge {
+      padding-top: 180px;
+      padding-bottom: 100px;
+      background-color: transparent;
+    }
+  }
+  &--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--b-margin {
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.full-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.py40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py140 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @mixin atSmall {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @mixin atLarge {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  @mixin atSmall {
+    flex-direction: column;
+  }
+  @mixin atMedium {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+  }
+  @mixin atLarge {
+  }
+}

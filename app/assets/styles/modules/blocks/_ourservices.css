@@ -1,0 +1,44 @@
+.ourservices {
+  background: $secondGrey;
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+  }
+  &__desc {
+    flex: 8;
+    color: $secondWhite;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+  &__icon {
+    flex: 2;
+    position: absolute;
+    right: -115px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 5px solid $mainGrey;
+  }
+  @mixin atSmall {
+  }
+  @mixin atMedium {
+    text-align: right;
+    &__title {
+      text-align: right;
+    }
+    &__desc {
+      text-align: right;
+    }
+  }
+  @mixin atLarge {
+    background: url("/assets/images/serviceBackGround.png") no-repeat top
+      center/cover;
+  }
+}

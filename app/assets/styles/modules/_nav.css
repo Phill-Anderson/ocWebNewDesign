@@ -1,0 +1,42 @@
+.nav {
+  display: none;
+  float: right;
+  @mixin atMedium {
+    display: block;
+    padding-right: 40px;
+  }
+  @mixin atLarge {
+    padding-right: 0px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+  li {
+    float: left;
+    list-style: none;
+    @mixin atMedium {
+      padding-left: 1.4375rem;
+    }
+    @mixin atLarge {
+      padding-left: 3.4375rem;
+    }
+  }
+  li:first-child {
+    padding-left: 0;
+  }
+  a {
+    display: inline-block;
+    color: $mainWhite;
+    font-size: $fs14;
+    text-transform: uppercase;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    transition: 0.3s ease;
+  }
+  a:hover {
+    color: $mainOrange;
+    border-bottom: 1px solid $mainOrange;
+  }
+}

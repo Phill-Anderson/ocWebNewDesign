@@ -1,0 +1,15 @@
+.title {
+  font-size: $fs22;
+  &--small {
+    font-size: $fs18 !important;
+  }
+  @mixin atSmall {
+    font-size: $fs24;
+  }
+  @mixin atMedium {
+    font-size: $fs30;
+  }
+  @mixin atLarge {
+    font-size: $fs36;
+  }
+}

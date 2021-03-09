@@ -1,0 +1,21 @@
+@import "normalize.css";
+
+@import "base/_variables.css";
+@import "base/_mixins.css";
+@import "base/_global.css";
+
+@import "modules/_colors.css";
+@import "modules/_wrapper.css";
+@import "modules/_nav.css";
+@import "modules/_mobile-menu.css";
+@import "modules/_btn.css";
+@import "modules/_text.css";
+@import "modules/_rowCol.css";
+@import "modules/_title.css";
+
+@import "modules/blocks/_header.css";
+@import "modules/blocks/_slider.css";
+@import "modules/blocks/_who-we-are.css";
+@import "modules/blocks/_ourhistory.css";
+@import "modules/blocks/_ourservices.css";
+@import "modules/blocks/_recentworks.css";
