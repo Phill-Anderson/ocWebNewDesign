@@ -1,0 +1,46 @@
+/* text sizes */
+.smText {
+  font-size: 8px;
+  @mixin atSmall {
+    font-size: 10px;
+  }
+  @mixin atMedium {
+    font-size: 12px;
+  }
+}
+
+.mdText {
+  font-size: 12px;
+
+  @mixin atSmall {
+    font-size: 14px;
+  }
+  @mixin atMedium {
+    font-size: 16px;
+  }
+}
+
+.lgText {
+  font-size: 14px;
+  @mixin atSmall {
+    font-size: 16px;
+  }
+  @mixin atMedium {
+    font-size: 20px;
+  }
+}
+
+.extraText {
+  font-size: 16px;
+  @mixin atSmall {
+    font-size: 20px;
+  }
+  @mixin atMedium {
+    font-size: 26px;
+  }
+}
+
+/* text color */
+.white {
+  color: white;
+}

@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  @mixin atMedium {
+    flex-direction: row;
+  }
+}

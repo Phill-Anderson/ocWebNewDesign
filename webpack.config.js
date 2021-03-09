@@ -11,12 +11,12 @@ const postCSSPlugins = [
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("postcss-hexrgba"),
-  require("autoprefixer")
+  require("autoprefixer"),
 ];
 
 class RunAfterCompile {
   apply(compiler) {
-    compiler.hooks.done.tap("Copy images", function() {
+    compiler.hooks.done.tap("Copy images", function () {
       fse.copySync("./app/assets/images", "./docs/assets/images");
     });
   }
@@ -32,10 +32,10 @@ let cssConfig = {
 
 let pages = fse
   .readdirSync("./app")
-  .filter(function(file) {
+  .filter(function (file) {
     return file.endsWith(".html");
   })
-  .map(function(page) {
+  .map(function (page) {
     return new HtmlWebpackPlugin({
       filename: page,
       template: `./app/${page}`
@@ -58,7 +58,7 @@ if (currentTask == "dev") {
   };
 
   (config.devServer = {
-    before: function(app, server) {
+    before: function (app, server) {
       server._watch("./app/**/*.html");
     },
     contentBase: path.join(__dirname, "app"),

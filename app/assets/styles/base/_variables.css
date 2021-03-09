@@ -1,21 +1,11 @@
-$mainWhite: #f4f5f9;
-$mainOrange: #e74c3c;
-$mainGrey: #6a6a6a;
+$white: #f4f5f9;
+$orange: #e74c3c;
+$grey: #6a6a6a;
 
-$testbg: #030608;
+$gradColor1: #1d976c;
+$gradColor2: #93f9b9;
 
-$secondWhite: #e5e5e5;
-$secondGrey: #202020;
-$fs8: 0.5rem;
-$fs10: 0.625rem;
-$fs12: 0.75rem;
-$fs14: 0.875em;
-$fs16: 1rem;
-$fs18: 1.125rem;
-$fs20: 1.3rem;
-$fs22: 1.375rem;
-$fs24: 1.5rem;
-$fs26: 1.625rem;
-$fs28: 1.8rem;
-$fs30: 30px;
-$fs36: 2.25rem;
+$tomato1: #dd5e89;
+$tomato2: #f7bb97;
+
+$bg1: linear-gradient(to right, $tomato1, $tomato2);

@@ -1,42 +1,67 @@
 .nav {
-  display: none;
-  float: right;
+  position: relative;
+  background: $bg1;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  height: 80px;
   @mixin atMedium {
-    display: block;
-    padding-right: 40px;
+    padding: 25px;
+    height: 100px;
   }
-  @mixin atLarge {
-    padding-right: 0px;
+  &__menu {
+    position: relative;
+  }
+  &__logo {
+    display: block;
+    border: 1px solid #fff;
+    width: 95px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    top: 70%;
+    transition: background-color 500ms ease;
+    @mixin atMedium {
+      display: inline;
+      width: 135px;
+      margin-top: 0;
+      margin-left: 0;
+      position: absolute;
+      top: 50%;
+    }
+  }
+  &__logo:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: $tomato1;
   }
   ul {
-    margin: 0;
-    padding: 0;
-    @mixin clearfix;
-  }
-  li {
-    float: left;
-    list-style: none;
+    display: none;
     @mixin atMedium {
-      padding-left: 1.4375rem;
+      display: block;
+      position: relative;
+      float: right;
+      display: inline;
+      margin-top: 8px;
     }
-    @mixin atLarge {
-      padding-left: 3.4375rem;
+  }
+  &__item {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    a {
+      display: inline-block;
+      width: 150px;
+      text-transform: capitalize;
+      text-align: center;
+      transition: background-color 500ms ease;
+    }
+    a:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
     }
   }
-  li:first-child {
-    padding-left: 0;
-  }
-  a {
-    display: inline-block;
-    color: $mainWhite;
-    font-size: $fs14;
-    text-transform: uppercase;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    transition: 0.3s ease;
-  }
-  a:hover {
-    color: $mainOrange;
-    border-bottom: 1px solid $mainOrange;
+  &__item:last-child {
+    padding-right: 0;
   }
 }
