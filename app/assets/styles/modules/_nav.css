@@ -7,6 +7,8 @@
   padding: 5px;
   height: 80px;
   z-index: 9999;
+  background-size: 150%;
+  animation: bganimation 10s infinite alternate;
   @mixin atMedium {
     padding: 25px;
     height: 100px;
@@ -24,18 +26,37 @@
     position: absolute;
     top: 70%;
     transition: background-color 500ms ease;
+    overflow: hidden;
     @mixin atMedium {
       display: inline;
       width: 135px;
       margin-top: 0;
       margin-left: 0;
       position: absolute;
-      top: 50%;
+      top: 55%;
     }
   }
   &__logo:hover {
     background: rgba(255, 255, 255, 0.2);
     color: $tomato1;
+    a {
+      color: $tomato1;
+    }
+  }
+  &__logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(25deg);
+    z-index: -99999;
+    transition: width 0.5s;
+  }
+  &__logo:hover::before {
+    width: 120%;
   }
   ul {
     display: none;

@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 500ms ease;
+}
+.btn:hover {
+  color: orangered;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transform: skewX(25deg);
+  z-index: -99999;
+  transition: width 0.5s;
+}
+.btn:hover::before {
+  width: 120%;
+}

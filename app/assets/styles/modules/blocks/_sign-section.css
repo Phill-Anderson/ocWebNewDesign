@@ -1,0 +1,84 @@
+.sign-section {
+  position: relative;
+  height: 300px;
+  background: $bg1;
+  background-size: 200%;
+  animation: bganimation 10s infinite alternate;
+  /*  background-image: url("/assets/images/interface-3614766.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-blend-mode: darken;
+  background-attachment: fixed; */
+  @mixin atMedium {
+    height: 500px;
+  }
+  &__content {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    z-index: 0;
+    @mixin atMedium {
+      text-align: left;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  p {
+    width: 400px;
+    text-align: justify;
+    @mixin atMedium {
+      width: 500px;
+    }
+  }
+  &__img-container {
+    position: absolute;
+    top: 131px;
+    left: 220px;
+    @mixin atMedium {
+      position: relative;
+      margin-top: 60px;
+      top: 0;
+      left: 100px;
+    }
+  }
+  img {
+    display: none;
+    width: 400px;
+    @mixin atLarge {
+      display: inline-block;
+      width: 500px;
+    }
+  }
+  &__signBtn {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    @mixin atMedium {
+      top: 150px;
+      left: 100px;
+    }
+    @mixin atLarge {
+      top: 150px;
+      left: 0;
+    }
+  }
+}
+.loginbtn {
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  animation: btnAnimation 0.5s infinite alternate;
+  z-index: 9999;
+  @mixin atMedium {
+    top: 70px;
+    left: 220px;
+  }
+  @mixin atLarge {
+    top: 120px;
+    left: 120px;
+  }
+}

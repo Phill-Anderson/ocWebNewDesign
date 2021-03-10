@@ -1,20 +1,24 @@
 .slider-courses {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
   @mixin atMedium {
     padding-top: 40px;
   }
+  &__item {
+  }
+  &__image-container {
+    position: relative;
+  }
   &__category {
     display: inline-block;
     text-align: center;
+    text-transform: capitalize;
     width: 100px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: -5px;
+    left: -5px;
     background: $bg1;
     z-index: 1;
     @mixin atSmall {
@@ -22,27 +26,16 @@
     }
     @mixin atMedium {
       width: 150px;
-      top: 155px;
+      top: 87%;
       background: $bg1;
       z-index: 1;
-    }
-    @mixin at800 {
-      top: 180px;
-    }
-    @mixin at900 {
-      top: 205px;
-    }
-    @mixin at1000 {
-      top: 100px;
-    }
-    @mixin at1100 {
-      top: 115px;
     }
     @mixin atLarge {
       width: 150px;
-      top: 140px;
+      height: 30px;
+      top: 90%;
       background: $bg1;
-      z-index: 1;
+      z-index: 11;
     }
   }
   &__title {

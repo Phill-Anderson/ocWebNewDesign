@@ -1,3 +1,4 @@
 .section {
-  background: linear-gradient(to right, $tomato1, $tomato2);
+  &__title {
+  }
 }
