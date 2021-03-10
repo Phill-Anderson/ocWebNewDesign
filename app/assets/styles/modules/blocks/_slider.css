@@ -2,7 +2,12 @@
   position: relative;
   padding-top: 80px;
   z-index: -1;
-  @mixin atMedium {
-    padding-top: 100px;
+  &__item {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    @mixin atMedium {
+      height: 430px;
+    }
   }
 }

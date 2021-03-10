@@ -3,9 +3,7 @@
 @import "base/_mixins.css";
 @import "base/_global.css";
 
-@import "modules/main/_container.css";
-@import "modules/main/_row.css";
-@import "modules/main/_cols.css";
+@import "modules/main/_flexboxgrid.css";
 @import "modules/main/_spacing.css";
 @import "modules/main/_typography.css";
 @import "modules/main/_image.css";
@@ -16,3 +14,4 @@
 @import "modules/_mobile-menu.css";
 
 @import "modules/blocks/_slider.css";
+@import "modules/blocks/_slider-courses.css";
