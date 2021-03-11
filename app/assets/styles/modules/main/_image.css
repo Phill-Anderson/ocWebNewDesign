@@ -2,7 +2,10 @@
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
-  &__img {
+  &--long {
+    height: 200px;
+  }
+  img {
     position: absolute;
     object-fit: cover;
     width: 100%;

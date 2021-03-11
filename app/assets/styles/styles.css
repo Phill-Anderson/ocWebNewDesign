@@ -8,6 +8,8 @@
 @import "modules/main/_spacing.css";
 @import "modules/main/_typography.css";
 @import "modules/main/_image.css";
+@import "modules/main/_background.css";
+@import "modules/main/_cols.css";
 
 @import "modules/_section.css";
 @import "modules/_nav.css";
@@ -20,3 +22,5 @@
 @import "modules/blocks/_slider-courses.css";
 @import "modules/blocks/_sign-section.css";
 @import "modules/blocks/_become-teacher.css";
+@import "modules/blocks/_categories.css";
+@import "modules/blocks/_teachers.css";

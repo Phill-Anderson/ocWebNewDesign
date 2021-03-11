@@ -1,0 +1,4 @@
+.animatedBg {
+  background-size: 150%;
+  animation: bganimation 10s infinite alternate;
+}
