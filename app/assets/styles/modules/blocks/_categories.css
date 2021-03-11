@@ -1,6 +1,6 @@
 .categories {
   position: relative;
-  background: #e3816f;
+  background: $orange;
   /*  background-size: 150%;
   animation: bganimation 20s infinite alternate; */
   p {

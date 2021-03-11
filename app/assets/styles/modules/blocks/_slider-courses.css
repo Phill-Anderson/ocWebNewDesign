@@ -18,7 +18,7 @@
     position: absolute;
     top: -5px;
     left: -5px;
-    background: $bg1;
+    background: $orange;
     z-index: 1;
     @mixin atSmall {
       width: 120px;
@@ -26,14 +26,12 @@
     @mixin atMedium {
       width: 150px;
       top: 87%;
-      background: $bg1;
       z-index: 1;
     }
     @mixin atLarge {
       width: 150px;
       height: 30px;
       top: 90%;
-      background: $bg1;
       z-index: 11;
     }
   }
@@ -54,16 +52,29 @@
   }
   &__image {
     position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    img {
+    div {
+      position: relative;
+    }
+    div::before {
       position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    div:hover::before {
+      animation: circle 0.75s;
     }
   }
+
   &__totalTime {
     display: inline-block;
     margin-right: 10px;

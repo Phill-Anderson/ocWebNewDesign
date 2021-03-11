@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background: $bg1;
+  background-size: 150%;
+  animation: bganimation 10s infinite alternate;
+  &__copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
