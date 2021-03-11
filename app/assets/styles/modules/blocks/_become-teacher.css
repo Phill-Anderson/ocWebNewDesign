@@ -1,0 +1,25 @@
+.become-teacher {
+  &__item {
+    display: flex;
+    margin-bottom: 50px;
+    @mixin atMedium {
+      margin-bottom: 0px;
+    }
+  }
+  &__img-container {
+    display: inline-block;
+    flex: 1;
+    img {
+      width: 120px;
+      margin-left: 30px;
+      @mixin atMedium {
+        width: 200px;
+        margin-left: 0;
+      }
+    }
+  }
+  &__content {
+    display: inline-block;
+    flex: 1;
+  }
+}

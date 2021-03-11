@@ -6,7 +6,7 @@
   transition: background-color 500ms ease;
 }
 .btn:hover {
-  color: orangered;
+  color: $orange;
 }
 .btn::before {
   content: "";
@@ -21,5 +21,31 @@
   transition: width 0.5s;
 }
 .btn:hover::before {
+  width: 120%;
+}
+
+.btnBg {
+  display: inline-block;
+  border: 1px solid $orange;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 500ms ease;
+}
+.btnBg:hover {
+  color: #fff;
+}
+.btnBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 0;
+  height: 100%;
+  background: $orange;
+  transform: skewX(25deg);
+  z-index: -99999;
+  transition: width 0.5s;
+}
+.btnBg:hover::before {
   width: 120%;
 }
