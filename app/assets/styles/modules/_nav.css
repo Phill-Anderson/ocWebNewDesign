@@ -9,13 +9,13 @@
   z-index: 9999;
   background-size: 150%;
   animation: bganimation 10s infinite alternate;
-  -webkit-box-shadow: 5px 18px 27px 9px rgba(0,0,0,0.97); 
-  box-shadow: 5px 18px 27px 9px rgba(0,0,0,0.97);
+  -webkit-box-shadow: 5px 18px 27px 9px rgba(0, 0, 0, 0.97);
+  box-shadow: 5px 18px 27px 9px rgba(0, 0, 0, 0.97);
   @mixin atMedium {
     padding: 25px;
     height: 100px;
     z-index: 9999;
-   
+
     &--dark {
       height: 80px !important;
       animation: none;
@@ -132,27 +132,22 @@
       width: 70px;
     }
     @mixin atMedium {
-      .nav--dark .nav__menu ul .signInUp lottie-player{
+      .nav--dark .nav__menu ul .signInUp lottie-player {
         height: 50px;
         width: 50px;
       }
-      }
-    }
-    @mixin atSVGA {
-      right: 3%;
-    }
-    @mixin atHD {
-      right: 20px;
-    }
-    @mixin atFHD {
-      right: 7%;
-    }
-    @mixin at4KUHD {
-      right: 28%;
     }
   }
-  &__login {
+  @mixin atSVGA {
+    right: 3%;
   }
-  &__register {
+  @mixin atHD {
+    right: 20px;
+  }
+  @mixin atFHD {
+    right: 7%;
+  }
+  @mixin at4KUHD {
+    right: 28%;
   }
 }
