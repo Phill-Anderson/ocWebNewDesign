@@ -1,5 +1,5 @@
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 40px;
   display: block;
@@ -95,11 +95,16 @@
 }
 
 .mobileMenu_Layout {
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 100vh;
   display: none;
-  background: rgba(192, 192, 192, 0.8);
+  background: $bg1;
+  background-size: 150%;
+  animation: bganimation 10s infinite alternate;
   ul {
     width: 100vw;
     text-align: center;
@@ -109,11 +114,11 @@
     display: block;
   }
   a {
-    font-size: 18px;
+    font-size: 24px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
-    color: orangered;
+    color: #fff;
     text-align: left !important;
   }
   a:hover {

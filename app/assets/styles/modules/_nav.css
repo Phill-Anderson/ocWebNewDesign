@@ -1,6 +1,6 @@
 .nav {
   position: relative;
-  background: #e3816f;
+  background: $bg1;
   position: fixed;
   width: 100%;
   height: 100px;
@@ -9,10 +9,21 @@
   z-index: 9999;
   background-size: 150%;
   animation: bganimation 10s infinite alternate;
+  -webkit-box-shadow: 5px 18px 27px 9px rgba(0,0,0,0.97); 
+  box-shadow: 5px 18px 27px 9px rgba(0,0,0,0.97);
   @mixin atMedium {
     padding: 25px;
     height: 100px;
     z-index: 9999;
+   
+    &--dark {
+      height: 80px !important;
+      animation: none;
+      background-color: rgba(23, 51, 72, 0.8);
+      .nav__menu ul {
+        margin-top: -3px;
+      }
+    }
   }
   &__menu {
     position: relative;
@@ -25,15 +36,19 @@
     margin-left: 20px;
     position: absolute;
     top: 70%;
-    transition: background-color 500ms ease;
+    transition: all 500ms ease;
     overflow: hidden;
     @mixin atMedium {
       display: inline;
       width: 135px;
-      margin-top: 0;
+      margin-top: 5px;
       margin-left: 0;
       position: absolute;
       top: 55%;
+      .nav--dark & {
+        margin-top: -5px;
+        transform: scale(0.8);
+      }
     }
   }
   &__logo:hover {
@@ -112,6 +127,17 @@
     right: 150px;
     transform: translateY(-50%);
     cursor: pointer;
+    lottie-player {
+      height: 70px;
+      width: 70px;
+    }
+    @mixin atMedium {
+      .nav--dark .nav__menu ul .signInUp lottie-player{
+        height: 50px;
+        width: 50px;
+      }
+      }
+    }
     @mixin atSVGA {
       right: 3%;
     }

@@ -18,8 +18,10 @@
     position: absolute;
     top: -5px;
     left: -5px;
-    background: $orange;
-    z-index: 1;
+    background: $bg1;
+    background-size: 150%;
+    animation: bganimation 10s infinite alternate;
+    z-index: 0;
     @mixin atSmall {
       width: 120px;
     }

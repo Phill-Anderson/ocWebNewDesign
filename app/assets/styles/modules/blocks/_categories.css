@@ -1,8 +1,8 @@
 .categories {
   position: relative;
-  background: $orange;
-  /*  background-size: 150%;
-  animation: bganimation 20s infinite alternate; */
+  background: $bg1;
+  background-size: 150%;
+  animation: bganimation 10s infinite alternate;
   p {
     text-align: center;
   }
