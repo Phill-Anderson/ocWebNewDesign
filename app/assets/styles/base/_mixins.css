@@ -14,23 +14,58 @@
     @mixin-content;
   }
 }
-@define-mixin at800 {
+@define-mixin atSVGA {
   @media (min-width: 800px) {
     @mixin-content;
   }
 }
-@define-mixin at900 {
-  @media (min-width: 900px) {
+@define-mixin atXGA {
+  @media (min-width: 1024px) {
     @mixin-content;
   }
 }
-@define-mixin at1000 {
-  @media (min-width: 1000px) {
+@define-mixin atSXGA {
+  @media (min-width: 1280px) {
     @mixin-content;
   }
 }
-@define-mixin at1100 {
-  @media (min-width: 1100px) {
+@define-mixin atHD {
+  @media (min-width: 1366px) {
+    @mixin-content;
+  }
+}
+@define-mixin atWXGAPLUS {
+  @media (min-width: 1440px) {
+    @mixin-content;
+  }
+}
+@define-mixin atHDPLUS {
+  @media (min-width: 1600px) {
+    @mixin-content;
+  }
+}
+@define-mixin atWSXGA {
+  @media (min-width: 1680px) {
+    @mixin-content;
+  }
+}
+@define-mixin atFHD {
+  @media (min-width: 1920px) {
+    @mixin-content;
+  }
+}
+@define-mixin atQWXGA {
+  @media (min-width: 2048px) {
+    @mixin-content;
+  }
+}
+@define-mixin atQHD {
+  @media (min-width: 2560px) {
+    @mixin-content;
+  }
+}
+@define-mixin at4KUHD {
+  @media (min-width: 3840px) {
     @mixin-content;
   }
 }

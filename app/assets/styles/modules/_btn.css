@@ -1,6 +1,7 @@
 .btn {
   display: inline-block;
   border: 1px solid #fff;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
   transition: background-color 500ms ease;
@@ -27,6 +28,7 @@
 .btnBg {
   display: inline-block;
   border: 1px solid $orange;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
   transition: background-color 500ms ease;

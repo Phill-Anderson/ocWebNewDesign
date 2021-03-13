@@ -1,0 +1,14 @@
+.input {
+  width: 100%;
+
+  border: 1px solid $tomato1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $tomato1;
+  }
+}

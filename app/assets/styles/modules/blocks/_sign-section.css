@@ -69,6 +69,7 @@
 }
 .loginbtn {
   position: absolute;
+  border-radius: 30px;
   top: 32%;
   left: 25%;
   animation: btnAnimation 0.5s infinite alternate;

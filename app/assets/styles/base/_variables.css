@@ -9,3 +9,4 @@ $tomato1: #dd5e89;
 $tomato2: #f7bb97;
 
 $bg1: linear-gradient(to right, $tomato1, $tomato2);
+$bg2: linear-gradient(to right, #ff4b2b, #ff416c);

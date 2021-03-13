@@ -8,11 +8,12 @@
     <title>Үнэ цэнэтэй мэдлэгийг танд</title>
     <meta name="keywords" content="Travel planning, travel bundles, travel escapes, great escape" />
     <meta name="description" content="Бид таны амьдралыг аз жаргал, адал явдлаар дүүргэх болно." />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
       <div class="container-fluid">
         <header class="header">   
-                <nav class="nav">   
+                <nav class="nav">
                   <div class="container"> 
                     <div class="nav__menu">
                       <div class="nav__logo p10">
@@ -28,9 +29,17 @@
                         <div class="mobile-menu__line"></div>
                       </div>
                     </div>
-                  </div>    
+                  </div>   
+                  
+                  <div class="nav__signInUp">
+                    <div class="nav__login open-modal loginModal">
+                      <lottie-player src="./assets/images/3619-profile.json" background="transparent"  speed="1"  style="width: 80px; height: 80px;" loop  autoplay></lottie-player>
+                    </div>
+                    <div class="nav__register ml25">
+                      <a class="mdText white open-modal registerModal">Бүртгүүлэх</a>
+                    </div>
+                  </div>
                 </nav>
-            </div>
         </header>
         <div class="mobileMenu_Layout">
           <ul>
@@ -48,7 +57,7 @@
             </div>
           </div>
         </div>  
-
+      </div>    
       
 
     <div class="container-fluid">
@@ -369,7 +378,7 @@
                       <p class="mdText white">
                         Энэ хэсэгт орох текстүүд нь алдартай хүмүүсийн хэлсэн гоё гоё үгнүүдийг слайд солигдож байгаа юм шиг сольж харуулна. Эсвэл давуу талуудыг харуулж болно
                       </p>
-                      <div class="sign-section__signBtn"><a href="javascript:void()" class="btn py10 px25 mdText white">Бүртгүүлэх</a></div>
+                      <div class="sign-section__signBtn open-modal registerModal"><a href="#" class="btn py10 px25 mdText white ">Бүртгүүлэх</a></div>
                       
                   </div>  
                 </div>
@@ -378,7 +387,7 @@
                     <div class="sign-section__img-container">
                       <img src="./assets/images/computer-158675.png" />
                       <div class="loginbtn">
-                        <a href="#" class="btnLogin px25 py10 mdText white">Нэвтрэх</a>  
+                        <a href="#" class="btnLogin px25 py10 mdText white open-modal loginModal">Нэвтрэх</a>  
                       </div>
                     </div>
                   </div>
@@ -632,6 +641,6 @@
       </div>
     </footer>
 
-    <script  type="module" src="./assets/scripts/App.js"></script>
+    <script???  type="module" src="./assets/scripts/App.js"></script???>
   </body>
 </html>
